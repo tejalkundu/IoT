@@ -1,0 +1,196 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+
+\author{}
+\date{}
+
+\begin{document}
+
+\textbf{USE OF IoT IN AGRICULTURE}
+
+Submitted by:
+
+Tejal Singh
+
+AI\&DS-B
+
+21011101133
+
+Introduction:
+
+IoT (Internet of Things) architecture is being increasingly used in
+agriculture to improve crop yields and reduce costs. IoT devices such as
+sensors, cameras, and drones are used to collect data on soil moisture,
+temperature, and other environmental factors. This data is then analyzed
+by machine learning algorithms to optimize irrigation, fertilization,
+and other key aspects of crop management.
+
+One key area where IoT is being used in agriculture is precision
+farming. Precision farming involves using precision agriculture tools
+such as GPS, sensors, and drones to collect data on crop health, soil
+conditions, and other factors that affect crop growth. This data is then
+analyzed to optimize planting, irrigation, fertilization, and other key
+aspects of crop management.
+
+IoT also plays a key role in Livestock monitoring, IoT enabled devices
+such as temperature sensors, cameras, and weight sensors can be placed
+on cows and other livestock. This data can be used to monitor the health
+of the animals, and ensure they are being raised in a safe and healthy
+environment.
+
+Another area where IoT is being used in agriculture is in the use of
+autonomous vehicles. IoT-enabled tractors, drones, and other vehicles
+are used to plant, harvest, and transport crops. This allows farmers to
+reduce labor costs and improve crop yields.
+
+Architecture:
+
+There are usually four layers present in an IoT system, which are as
+follows:
+
+\textbf{{1.Perception Layer}} : Any IoT system's initial layer is made
+up of "things" or
+
+endpoint devices that act as a link between the real world and the
+digital one. The physical layer, which contains sensors and actuators
+capable of gathering, receiving, and processing data across a network,
+is referred to as perception. Wireless or wired connections can be used
+to link sensors and actuators. The components' range and locations are
+not constrained by the design.
+
+In the agriculture sector IoT sensor nodes collect information from the
+farming environment, such as soil moisture, air humidity, temperature,
+nutrient ingredients of soil, pest images, and water quality, then
+transmit collected data to IoT backhaul devices. Depending on the
+operation purpose and installation location, IoT sensor nodes can be
+installed as RFDs (reduced-function devices), which only communicate
+with FFDs (full-function devices). These nodes cannot communicate with
+the other RFDs, aiming to save energy and decrease investment costs.
+
+\textbf{{2.Network Layer}}: An overview of the data flow across the
+programme is given by the network layers. Data Acquiring Systems (DAS)
+and Internet/Network gateways are present in this tier. Data aggregation
+and conversion tasks are carried out by a DAS (collecting and
+aggregating data from sensors, then converting analogue data to digital
+data, etc.). Data gathered by the sensor devices must be sent and
+processed. The network layer performs that function. It enables
+connections and communication between these gadgets and other servers,
+smart gadgets, and network gadgets. Additionally, it manages each
+device's data transfer.
+
+The network layer in the agriculture sector works as following,the
+sensor devices are connected together via either long-range or
+short-range wireless networks, such as 4G, Wi-Fi, Bluetooth LE, ZigBee,
+and others. The system can be implemented using embedded systems, which
+are made up of tiny modules that provide a network and aid in delivering
+data more securely and accurately. The agricultural system would
+function more effectively in this way. The information about several
+distinct parameters, such as soil moisture, temperature, humidity, air
+quality, and ground water level regarding a given location, will be
+transmitted via a tiny embedded device in this smart agricultural
+system. As a result, the network layer is essential for data
+transmission from sensor devices to software or databases, where
+computations are carried out using the sent data.
+
+\includegraphics[width=5.30417in,height=5.6in]{media/image1.gif}
+
+3.\textbf{{Processing / Middleware Layer :}} The IoT ecosystem's
+processing layer functions as its brain. Before being transported to the
+data centre, data is often evaluated, pre-processed, and stored here. It
+is then retrieved by software programmes that handle the data and plan
+future actions. This is where edge analytics or edge IT comes into play.
+
+In this sector, a remote database is used to store the substantial
+quantity of data that is received from the remote terminal unit in the
+perception layer. On a timely basis, a predictive analytic algorithm is
+applied to the data. These projected values are used to execute the
+required block of instructions. The instructions mention things like
+automatically watering the crops and automatically giving them shade.
+These instructions are in charge of altering the system's application
+gateway. Given that the weather in the globe is continuously changing
+and that the farm is hoping for the finest output possible, analytical
+operations play a significant role. The user may find it helpful to
+control crop production using these actions based on constantly changing
+real-time data.
+
+4. \textbf{{Application Layer:}} The final layer in the system is the
+application layer, it comprises of~communication protocols and hosting
+interface techniques for a communication network, including MQTT, AMQP,
+CoAP, etc. A website or an Android application, for example, receives
+data from the middleware layer that has been encrypted; these devices
+then employ internal software to decode the data and store it locally
+for later use. This information is used to demonstrate the current
+trend. The programme keeps track of data and makes wise recommendations
+to progressively boost the system's throughput.
+
+Conclusion:
+
+The idea of fusing agriculture with cutting-edge technology may be
+realised by incorporating technology into the traditional and archaic
+methods at the core of agriculture. The IoT-based strategy makes it
+simpler for technology to assess environmental factors like climate,
+soil quality, etc. while the software layer strengthens the conventional
+wisdom of the elderly. Technology must take lessons from existing
+methods and automate jobs to make life easier for people. Due to its
+flexibility to adapt to changing field circumstances, this technology
+has the potential to become worldwide. Therefore, IoT might assist
+achieve smart farming and save a drastically declining agricultural
+business by streamlining farming practises.
+
+\end{document}
